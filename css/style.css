@@ -64,8 +64,7 @@ textarea {
 	resize: none;
 }
 
-button.btn,
-.btn {
+button .btn {
 	font-family: "Girloy", Aria, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -210,10 +209,8 @@ input[type="radio"].visual-hidden {
 	background-position: center;
 
 }
-
-.search-form > input[type=submit] {
+ input .submit {
 	display: none;
-
 	background: none;
 	border: 2px solid black;
 	font-size: 15px;
@@ -536,9 +533,9 @@ input[type="radio"].visual-hidden {
 	margin-bottom: 110px;
 }
 
-.slider input[type="radio"]#slide1:checked ~ .slider-control > label[for="slide1"]::before,
-.slider input[type="radio"]#slide2:checked ~ .slider-control > label[for="slide2"]::before,
-.slider input[type="radio"]#slide3:checked ~ .slider-control > label[for="slide3"]::before {
+.slider input[type="radio"] .slide1:checked ~ .slider-control > label[for="slide1"]::before,
+.slider input[type="radio"] .slide2:checked ~ .slider-control > label[for="slide2"]::before,
+.slider input[type="radio"] .slide3:checked ~ .slider-control > label[for="slide3"]::before {
 		content: "";
 		width: 6px;
 		height: 6px;
