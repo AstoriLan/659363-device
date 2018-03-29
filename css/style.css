@@ -64,7 +64,8 @@ textarea {
 	resize: none;
 }
 
-button .btn {
+button .btn,
+.btn {
 	font-family: "Girloy", Aria, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -533,9 +534,9 @@ input[type="radio"].visual-hidden {
 	margin-bottom: 110px;
 }
 
-.slider input[type="radio"] .slide1:checked ~ .slider-control > label[for="slide1"]::before,
-.slider input[type="radio"] .slide2:checked ~ .slider-control > label[for="slide2"]::before,
-.slider input[type="radio"] .slide3:checked ~ .slider-control > label[for="slide3"]::before {
+.slider .slide1:checked ~ .slider-control > label[for="slide1"]::before,
+.slider .slide2:checked ~ .slider-control > label[for="slide2"]::before,
+.slider .slide3:checked ~ .slider-control > label[for="slide3"]::before {
 		content: "";
 		width: 6px;
 		height: 6px;
@@ -592,9 +593,9 @@ input[type="radio"].visual-hidden {
 	max-height: 500px;
 }
 
-.slider input[type="radio"]#slide1:checked ~ .slider-list > #slid1,
-.slider input[type="radio"]#slide2:checked ~ .slider-list > #slid2,
-.slider input[type="radio"]#slide3:checked ~ .slider-list > #slid3 {
+.slider .slide1:checked ~ .slider-list > .slid1,
+.slider .slide2:checked ~ .slider-list > .slid2,
+.slider .slide3:checked ~ .slider-list > .slid3 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -931,22 +932,22 @@ input[type="radio"].visual-hidden {
 	margin-bottom: 20px;
 }
 
-.services input[type="radio"]#delivery:checked ~ .service-container label[for="delivery"],
-.services input[type="radio"]#gaurante:checked ~ .service-container label[for="gaurante"],
-.services input[type="radio"]#credit:checked ~ .service-container label[for="credit"] {
+.services .visual-hidden-radio-service-delivery:checked ~ .service-container label[for="delivery"],
+.services .visual-hidden-radio-service-gaurante:checked ~ .service-container label[for="gaurante"],
+.services .visual-hidden-radio-service-credit:checked ~ .service-container label[for="credit"] {
 	background-color: #000000;
 }
 
-.services input[type="radio"]#delivery:checked ~ .service-container label[for="delivery"] span,
-.services input[type="radio"]#gaurante:checked ~ .service-container label[for="gaurante"] span,
-.services input[type="radio"]#credit:checked ~ .service-container label[for="credit"] span {
+.services .visual-hidden-radio-service-delivery:checked ~ .service-container label[for="delivery"] span,
+.services .visual-hidden-radio-service-gaurante:checked ~ .service-container label[for="gaurante"] span,
+.services .visual-hidden-radio-service-credit:checked ~ .service-container label[for="credit"] span {
 	color: #f7e184;
 	background-color: transparent;
 }
 
-.services input[type="radio"]#delivery:checked ~ .service-container .services-list li[class$="delivery"],
-.services input[type="radio"]#gaurante:checked ~ .service-container .services-list li[class$="gaurante"],
-.services input[type="radio"]#credit:checked ~ .service-container .services-list li[class$="credit"] {
+.services .visual-hidden-radio-service-delivery:checked ~ .service-container .services-list li[class$="delivery"],
+.services .visual-hidden-radio-service-gaurante:checked ~ .service-container .services-list li[class$="gaurante"],
+.services .visual-hidden-radio-service-credit:checked ~ .service-container .services-list li[class$="credit"] {
 	display: block;
 }
 
